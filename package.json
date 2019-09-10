@@ -1,7 +1,6 @@
 {
   "name": "countries_api_lab",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +15,14 @@
   },
   "dependencies": {
     "vue": "^2.6.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osuchted/countries_api_lab-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/osuchted/countries_api_lab-/issues"
+  },
+  "homepage": "https://github.com/osuchted/countries_api_lab-#readme",
+  "description": ""
 }

@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script type="text/javascript" src="js/bundle.js"></script>
-  </head>
-  <body>
-    <div id="app">
-      <h1>The Countries of the World</h1>
-      <label for="country" class="primary">Select Country</label>
-          <select id="country">
-            <option value="" disabled selected></option>
-            <option v-for="country in countries">{{country.name}}</option>
-          </select>
-          <!-- <p>{{country.name}}</p> -->
-
-      <!-- <ul>
-        <li v-for="country in countries">{{country.name}}</li>
-      </ul> -->
-
-
+<head>
+  <meta charset="utf-8">
+  <title>The Countries of the World</title>
+  <script type="text/javascript" src="js/bundle.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>The Countries of the World</h1>
+    <label for="country" class="primary">Select Country</label>
+    <select id="country" style="margin:10px;">
+      <option value="" disabled selected>Select a Country</option>
+      <option v-for="country in countries">{{country.name}}</option>
+    </select>
+    <!-- <ul>
+      <li v-for="country in countries">{{country.capital}}</li>
+    </ul> -->
+    <div>
+      <img v-for="country in countries" :src="country.flag" style="width:25%; height:25%"/>
     </div>
-
-  </body>
+  </div>
+</body>
 </html>
