@@ -11,9 +11,13 @@
       <label for="country" class="primary">Select Country</label>
           <select id="country">
             <option value="" disabled selected></option>
-            <option value=""></option>
-
+            <option v-for="country in countries">{{country.name}}</option>
           </select>
+          <!-- <p>{{country.name}}</p> -->
+
+      <!-- <ul>
+        <li v-for="country in countries">{{country.name}}</li>
+      </ul> -->
 
 
     </div>
